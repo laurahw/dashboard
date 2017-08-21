@@ -8,8 +8,7 @@
   angular.module('BlurAdmin.pages', [
     'ui.router',
     'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.charts',
-    'BlurAdmin.pages.profile'
+    'BlurAdmin.pages.charts'
   ])
       .config(routeConfig);
 
@@ -28,9 +27,6 @@
         title: 'Sign Up',
         fixedHref: 'reg.html',
         blank: true
-      }, {
-        title: 'User Profile',
-        stateRef: 'profile'
       }, {
         title: '404 Page',
         fixedHref: '404.html',
