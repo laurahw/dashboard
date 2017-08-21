@@ -2,7 +2,7 @@
 
 Simple dashboard built to use alongside CI upskilling.
 
-Original design of BlurAdmin admin panel is open source design by [Akveo team](http://akveo.com/)
+Original design of the admin panel is open source design by [Akveo team](http://akveo.com/)
 Design updates and logic code written by [Laura Hanna-White](http://laurahannawhite.com)
 
 [![Build Status](https://travis-ci.org/akveo/blur-admin.svg?branch=master)](https://travis-ci.org/akveo/blur-admin)

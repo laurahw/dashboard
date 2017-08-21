@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.dashboard')
+  angular.module('DevopsDash.pages.dashboard')
       .controller('WeatherCtrl', WeatherCtrl);
 
   /** @ngInject */

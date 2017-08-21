@@ -5,10 +5,10 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages', [
+  angular.module('DevopsDash.pages', [
     'ui.router',
-    'BlurAdmin.pages.dashboard',
-    'BlurAdmin.pages.charts'
+    'DevopsDash.pages.dashboard',
+    'DevopsDash.pages.charts'
   ])
       .config(routeConfig);
 
