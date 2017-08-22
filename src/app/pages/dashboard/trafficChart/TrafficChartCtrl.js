@@ -12,7 +12,7 @@
   function TrafficChartCtrl($scope, baConfig, colorHelper) {
 
       $scope.transparent = baConfig.theme.blur;
-      var dashboardColors = baConfig.colors.dashboard;
+      var dashboardColors = baConfig.colors;
       $scope.doughnutData = {
           labels: [
               'Other',
@@ -25,19 +25,19 @@
               {
                   data: [2000, 1500, 1000, 1200, 400],
                   backgroundColor: [
-                      dashboardColors.white,
-                      dashboardColors.blueStone,
-                      dashboardColors.surfieGreen,
-                      dashboardColors.silverTree,
-                      dashboardColors.gossip
+                      dashboardColors.andRed,
+                      dashboardColors.andBlue,
+                      dashboardColors.andYellow,
+                      dashboardColors.andGreen,
+                      dashboardColors.andPurple,
 
                   ],
                   hoverBackgroundColor: [
-                      colorHelper.shade(dashboardColors.white, 15),
-                      colorHelper.shade(dashboardColors.blueStone, 15),
-                      colorHelper.shade(dashboardColors.surfieGreen, 15),
-                      colorHelper.shade(dashboardColors.silverTree, 15),
-                      colorHelper.shade(dashboardColors.gossip, 15)
+                      colorHelper.shade(dashboardColors.andRed, 15),
+                      colorHelper.shade(dashboardColors.andBlue, 15),
+                      colorHelper.shade(dashboardColors.andYellow, 15),
+                      colorHelper.shade(dashboardColors.andGreen, 15),
+                      colorHelper.shade(dashboardColors.andPurple, 15),
                   ],
                   percentage: [87, 22, 70, 38, 17]
               }]

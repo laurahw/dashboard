@@ -1,7 +1,4 @@
-/**
- * @author v.lugovksy
- * created on 16.12.2015
- */
+
 (function () {
   'use strict';
 
@@ -13,22 +10,22 @@
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
     $scope.charts = [{
       color: pieColor,
-      description: 'New Visits',
+      description: 'On Client',
       stats: '57,820',
       icon: 'person',
     }, {
       color: pieColor,
-      description: 'Purchases',
+      description: 'On Internal',
       stats: '$ 89,745',
       icon: 'money',
     }, {
       color: pieColor,
-      description: 'Active Users',
+      description: 'On Holiday',
       stats: '178,391',
       icon: 'face',
     }, {
       color: pieColor,
-      description: 'Returned',
+      description: 'On Sabbatical',
       stats: '32,592',
       icon: 'refresh',
     }
