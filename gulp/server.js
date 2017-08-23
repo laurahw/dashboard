@@ -3,6 +3,12 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
+var express = require('express');
+var mongoose = require('mongoose');
+var Task = require('../node_api/models/todoListModel');
+var bodyParser = require('body-parser');
+var routes = require('../node_api/routes/todoListRoutes');
+var app = express();
 
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
@@ -62,3 +68,23 @@ gulp.task('serve:e2e', ['inject'], function () {
 gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });
+
+
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/Tododb');
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+
+var routes = require('../node_api/routes/todoListRoutes');
+routes(app);
+
+app.use(function(req, res) {
+    res.status(404).send({url: req.originalUrl + ' not found'})
+});
+
+app.listen(3000);
+
+console.log('todo list RESTful API server started on: ' + 3000);

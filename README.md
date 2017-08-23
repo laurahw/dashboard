@@ -26,7 +26,9 @@ Design updates and logic code written by [Laura Hanna-White](http://laurahannawh
 
 #To Run the Project
 
-`gulp serve`
+`gulp serve` - Front end
+
+`npm run start` - Server
 
 
 License
